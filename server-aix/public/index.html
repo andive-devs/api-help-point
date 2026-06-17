@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snippet Vault</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div>
+          <h1>Snippet Vault</h1>
+          <p>Save, search and copy code snippets locally.</p>
+        </div>
+        <button id="new-btn" class="btn primary">+ New snippet</button>
+      </header>
+
+      <section class="toolbar">
+        <input
+          id="search"
+          type="search"
+          placeholder="Search title, tags, language or code..."
+          autocomplete="off"
+        />
+        <span id="count" class="count">0 snippets</span>
+      </section>
+
+      <main class="layout">
+        <section class="panel list-panel">
+          <div id="snippet-list" class="snippet-list"></div>
+        </section>
+
+        <section class="panel editor-panel">
+          <form id="snippet-form" class="snippet-form">
+            <input type="hidden" id="snippet-id" />
+
+            <div class="field-row">
+              <label>
+                Title
+                <input id="title" type="text" placeholder="e.g. Fetch with timeout" required />
+              </label>
+              <label>
+                Language
+                <input id="language" type="text" placeholder="javascript" />
+              </label>
+            </div>
+
+            <label>
+              Tags
+              <input id="tags" type="text" placeholder="api, node, fetch" />
+            </label>
+
+            <label>
+              Code
+              <textarea
+                id="code"
+                rows="18"
+                placeholder="Paste your snippet here..."
+                required
+              ></textarea>
+            </label>
+
+            <div class="actions">
+              <button type="submit" class="btn primary" id="save-btn">Save</button>
+              <button type="button" class="btn" id="copy-btn">Copy code</button>
+              <button type="button" class="btn danger" id="delete-btn" hidden>Delete</button>
+              <button type="button" class="btn ghost" id="clear-btn">Clear</button>
+            </div>
+          </form>
+        </section>
+      </main>
+    </div>
+
+    <template id="snippet-item-template">
+      <article class="snippet-item">
+        <div>
+          <h3 class="snippet-title"></h3>
+          <p class="snippet-meta"></p>
+        </div>
+        <span class="snippet-lang"></span>
+      </article>
+    </template>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
