@@ -1,0 +1,7 @@
+{
+  "vector": [0.11, -0.03, 0.09],
+  "top_k": 10,
+  "score_threshold": 0.72,
+  "session": { "name": "chat-user-42" },
+  "filter": { "source": "handbook.pdf" }
+}

@@ -1,0 +1,14 @@
+{
+  "session": { "name": "handbook-rag" },
+  "vectors": [
+    {
+      "vector": [0.12, -0.04, 0.08],
+      "metadata": {
+        "source": "handbook.pdf",
+        "page": 1,
+        "chunk": 1,
+        "content": "Section 1…"
+      }
+    }
+  ]
+}

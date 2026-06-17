@@ -1,0 +1,41 @@
+{
+  "name": "andive-helper",
+  "version": "1.0.0",
+  "description": "CLI helper for the Andive Vector API",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "andive",
+    "vector",
+    "cli",
+    "api",
+    "embeddings",
+    "rag"
+  ],
+  "bin": {
+    "andive": "./src/cli.js"
+  },
+  "files": [
+    "src",
+    "examples",
+    ".env.example",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "estimate": "node src/cli.js estimate",
+    "upsert": "node src/cli.js upsert",
+    "query": "node src/cli.js query",
+    "delete": "node src/cli.js delete",
+    "delete-session": "node src/cli.js delete-session",
+    "usage": "node src/cli.js usage",
+    "call": "node src/cli.js call"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "commander": "^13.1.0",
+    "dotenv": "^16.4.7"
+  }
+}

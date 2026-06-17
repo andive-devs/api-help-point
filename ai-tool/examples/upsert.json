@@ -1,0 +1,8 @@
+{
+  "vector": [0.12, -0.04, 0.08],
+  "metadata": {
+    "content": "Return policy within 30 days",
+    "source": "faq.md"
+  },
+  "session": { "name": "support-bot-v1" }
+}
